@@ -90,7 +90,7 @@ class UniqueInt:
 # Example usage
 if __name__ == "__main__":
     unique_int_processor = UniqueInt()
-    input_file_path = "Data-structures-Algorithms/hw01/sample_inputs/small_sample_input_01.txt"
-    output_file_path = "Data-structures-Algorithms/hw01/sample_results/small_sample_input_01.txt_results.txt"
+    input_file_path = "sample_inputs/small_sample_input_01.txt"
+    output_file_path = "sample_inputs/small_sample_input_01.txt"
     unique_int_processor.processFile(input_file_path, output_file_path)
 
