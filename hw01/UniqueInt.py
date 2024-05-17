@@ -30,9 +30,6 @@ class UniqueInt:
                 except ValueError:
                     continue  # Skip lines that do not contain a valid integer
 
-
-
-
 class UniqueInt:
     def processFile(self, input_file_path, output_file_path):
         with open(input_file_path, 'r') as input_file:
@@ -44,40 +41,13 @@ class UniqueInt:
         for input_file_path, output_file_path in zip(input_file_paths, output_file_paths):
             self.processFile(input_file_path, output_file_path)
 
-
-
-
-
-
-
-
-
-
-
-
-
     def processFiles(self, inputFilePaths, outputFilePaths):
-        """
-        Processes an input file to extract unique integers, sort them, and write to an output file.
-
-        Args:
-        inputFilePath (str): The path to the input file containing integers.
-        outputFilePath (str): The path to the output file to write sorted unique integers.
-        """
+       
         unique_integers = []
 
         # Start measuring time and memory usage
         start_time = time.time()
         tracemalloc.start()
-
-        '''with open(inputFilePath, 'r') as input_file:
-            while True:
-                integer = self.readNextItemFromFile(input_file)
-                if integer is None:
-                    break
-                if not self.seen[integer + 1023]:
-                    self.seen[integer + 1023] = True
-                    unique_integers.append(integer)'''
 
         # Sort unique integers using custom bubble sort
         sorted_unique_integers = self.bubble_sort(unique_integers)
