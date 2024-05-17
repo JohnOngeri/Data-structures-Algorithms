@@ -4,38 +4,36 @@ import tracemalloc
 class UniqueInt:
     def __init__(self):
         """
-        Initializes the UniqueInt object with a boolean array to track seen integers.
+       adds a boolean array to the UniqueInt object's initialization in order to monitor seen integers.
         """
-        self.seen = [False] * 2047  # Array to track integers from -1023 to 1023
+        self.seen = [False] * 2047  # Tracking integers from -1023 to 1023 using an array
 
     def readNextItemFromFile(self, inputFileStream):
         """
-        Reads the next integer item from the input file stream, skipping invalid lines.
+      skips over invalid lines and reads the subsequent integer item from the input file stream.
 
-        Args:
-        inputFileStream (file object): The input file stream.
+        Args: inputFileStream (file object): The stream of input files.
 
-        Returns:
-        int or None: The next valid integer from the file, or None if end of file is reached.
+        Returns: int or None: If the file's end is reached, return None. Otherwise, return the next valid integer from the file..
         """
         while True:
             line = inputFileStream.readline()
             if not line:
                 return None
             line = line.strip()
-            if line:  # Skip empty lines
+            if line:  # Ignore blank lines
                 try:
                     integer = int(line)
                     return integer
                 except ValueError:
-                    continue  # Skip lines that do not contain a valid integer
+                    continue  # Skip lines that don't have a legitimate integer on them.
 
 class UniqueInt:
     def processFile(self, input_file_path, output_file_path):
         with open(input_file_path, 'r') as input_file:
-            # Process the file content here
+            # Process the contents of the file here.
             pass
-        # Write output to output_file_path
+        # Put the result in output_file_path.
 
     def processFiles(self, input_file_paths, output_file_paths):
         for input_file_path, output_file_path in zip(input_file_paths, output_file_paths):
@@ -45,14 +43,14 @@ class UniqueInt:
        
         unique_integers = []
 
-        # Start measuring time and memory usage
+        # Begin tracking your time and memory usage.
         start_time = time.time()
         tracemalloc.start()
 
-        # Sort unique integers using custom bubble sort
+       # Use a custom bubble sort to sort unique integers.
         sorted_unique_integers = self.bubble_sort(unique_integers)
 
-        # Write the sorted unique integers to the output file
+        # Write the output file with the sorted unique integers.
         '''with open(outputFilePaths,'w') as output_file:
             for integer in sorted_unique_integers:
                 output_file.write(f"{integer}\n")'''
@@ -79,13 +77,11 @@ class UniqueInt:
 
     def bubble_sort(self, arr):
         """
-        Sorts an array of integers in ascending order using the bubble sort algorithm.
+       uses the bubble sort method to arrange an array of numbers in ascending order.
 
-        Args:
-        arr (list of int): The input list of integers to be sorted.
+        Args: arr (list of int): The list of integers to be sorted in the input.
 
-        Returns:
-        list of int: The sorted list of integers.
+        Returns: list of int: The integer list that has been sorted.
         """
         r = len(arr)
         for a in range(r):
