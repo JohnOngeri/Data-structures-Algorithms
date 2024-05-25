@@ -8,7 +8,7 @@ This project provides an implementation of sparse matrix operations, including a
 
 ## Directory Structure
 
-/dsa/sparse_matrix/
+/  Data-structures-Algorithms/sparse_matrix/
 ├── code/
 │ └── src/
 │ └── sparse_matrix.py
@@ -91,7 +91,6 @@ css
 Copy code
 
 This `README.md` provides a comprehensive guide to the project, covering the directory structure, input file format, usage instructions, code explanation, error handling, dependencies, and licensing information.
-
 
 
 
