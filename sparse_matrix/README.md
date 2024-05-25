@@ -1,5 +1,4 @@
-markdown
-Copy code
+
 # Sparse Matrix Operations
 
 ## Overview
@@ -17,7 +16,7 @@ This project provides an implementation of sparse matrix operations, including a
 └── matrix2.txt
 
 python
-Copy code
+
 
 ## Input File Format
 
@@ -29,7 +28,7 @@ cols=NUMBER_OF_COLUMNS
 ...
 
 mathematica
-Copy code
+
 
 For example:
 
@@ -40,9 +39,6 @@ cols=3180
 (0, 639, 857)
 (0, 165, -933)
 (0, 1350, -89)
-
-markdown
-Copy code
 
 ## Usage
 
@@ -62,33 +58,44 @@ Enter path to the second matrix file: ../../sample_inputs/matrix2.txt
 Enter operation (add/subtract/multiply): add
 Result:
 ... # Matrix result printed here
+
 Code Explanation
 SparseMatrix Class
 Initialization: Initialize with given number of rows and columns.
+
 Set Element: set_element(row, col, value) sets the value at the specified position.
+
 Get Element: get_element(row, col) retrieves the value at the specified position.
+
 Addition: add(other) adds two sparse matrices.
+
 Subtraction: subtract(other) subtracts the second sparse matrix from the first.
+
 Multiplication: multiply(other) multiplies two sparse matrices.
+
 read_sparse_matrix Function
+
 Reads a sparse matrix from a file and returns a SparseMatrix object.
+
 Main Function
 Prompts the user for file paths and desired operation.
 Loads the matrices from the files.
 Performs the requested operation and prints the result.
+
 Error Handling
 Handles invalid file formats with appropriate error messages.
 Ensures matrix dimensions are compatible for the requested operations.
+
 Dependencies
 This implementation uses only standard Python libraries.
+
 Notes
 The implementation does not use built-in libraries for matrix operations to ensure custom handling of sparse matrices.
 Ensure that input files are correctly formatted to avoid errors.
+
 License
 This project is licensed under the MIT License.
 
-css
-Copy code
 
 This `README.md` provides a comprehensive guide to the project, covering the directory structure, input file format, usage instructions, code explanation, error handling, dependencies, and licensing information.
 
