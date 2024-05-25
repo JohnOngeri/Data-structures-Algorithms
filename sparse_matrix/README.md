@@ -97,7 +97,7 @@ License
 This project is licensed under the MIT License.
 
 
-This `README.md` provides a comprehensive guide to the project, covering the directory structure, input file format, usage instructions, code explanation, error handling, dependencies, and licensing information.
+ This `README.md` provides a comprehensive guide to the project, covering the directory structure, input file format, usage instructions, code explanation, error handling, dependencies, and licensing information.
 
 
 
