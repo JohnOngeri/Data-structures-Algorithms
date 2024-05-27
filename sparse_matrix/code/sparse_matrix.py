@@ -220,7 +220,7 @@ if __name__ == "__main__":
     import os
 
     # Organize paths according to instructions
-   if __name__ == "__main__":
+   
     input_file_paths = [
         ("../sample_inputs/easy_sample_01_1.txt", "../sample_inputs/easy_sample_01_2.txt"),
         ("../sample_inputs/easy_sample_02_1.txt", "../sample_inputs/easy_sample_02_2.txt"),
