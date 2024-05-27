@@ -220,18 +220,19 @@ if __name__ == "__main__":
     import os
 
     # Organize paths according to instructions
+   if __name__ == "__main__":
     input_file_paths = [
-        ("/dsa/sparse_matrix/sample_inputs/easy_sample_01_1.txt", "/dsa/sparse_matrix/sample_inputs/easy_sample_01_2.txt"),
-        ("/dsa/sparse_matrix/sample_inputs/easy_sample_02_1.txt", "/dsa/sparse_matrix/sample_inputs/easy_sample_02_2.txt"),
-        ("/dsa/sparse_matrix/sample_inputs/easy_sample_03_1.txt", "/dsa/sparse_matrix/sample_inputs/easy_sample_03_2.txt"),
-        ("/dsa/sparse_matrix/sample_inputs/easy_sample_04_1.txt", "/dsa/sparse_matrix/sample_inputs/easy_sample_04_2.txt")
+        ("../sample_inputs/easy_sample_01_1.txt", "../sample_inputs/easy_sample_01_2.txt"),
+        ("../sample_inputs/easy_sample_02_1.txt", "../sample_inputs/easy_sample_02_2.txt"),
+        ("../sample_inputs/easy_sample_03_1.txt", "../sample_inputs/easy_sample_03_2.txt"),
+        ("../sample_inputs/easy_sample_04_1.txt", "../sample_inputs/easy_sample_04_2.txt")
     ]
 
     output_file_paths = [
-        "/dsa/sparse_matrix/sample_results/easy_sample_results_01.txt",
-        "/dsa/sparse_matrix/sample_results/easy_sample_results_02.txt",
-        "/dsa/sparse_matrix/sample_results/easy_sample_results_03.txt",
-        "/dsa/sparse_matrix/sample_results/easy_sample_results_04.txt"
+        "../sample_results/easy_sample_results_01.txt",
+        "../sample_results/easy_sample_results_02.txt",
+        "../sample_results/easy_sample_results_03.txt",
+        "../sample_results/easy_sample_results_04.txt"
     ]
 
     if len(sys.argv) != 2:
