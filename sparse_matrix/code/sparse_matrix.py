@@ -1,4 +1,5 @@
 import os
+import sys
 
 class SparseMatrix:
     """
@@ -166,6 +167,7 @@ class SparseMatrix:
         Args:
             file_path (str): Path to the output file.
         """
+        os.makedirs(os.path.dirname(file_path), exist_ok=True)
         with open(file_path, 'w') as f:
             f.write(f"rows={self.rows}\n")
             f.write(f"cols={self.cols}\n")
@@ -216,11 +218,7 @@ def process_files(input_file_paths, output_file_path, operation):
     print(f"Result written to {output_file_path}")
 
 if __name__ == "__main__":
-    import sys
-    import os
-
     # Organize paths according to instructions
-   
     input_file_paths = [
         ("../sample_inputs/easy_sample_01_1.txt", "../sample_inputs/easy_sample_01_2.txt"),
         ("../sample_inputs/easy_sample_02_1.txt", "../sample_inputs/easy_sample_02_2.txt"),
